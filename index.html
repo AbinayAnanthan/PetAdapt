@@ -1,0 +1,107 @@
+<div class="pet-container">
+        <div class="pet-card">
+            <img src="dog.png" alt="Dog" class="pet-image">
+            <h2>Dog</h2>
+            <h3>Breed: Labrador Retriever</h3>
+            <p>Price: $200</p>
+        </div>
+
+        <div class="pet-card">
+            <img src="cat.png" alt="Cat" class="pet-image">
+            <h2>Cat</h2>
+            <h3>Breed: Siamese</h3>
+            <p>Price: $150</p>
+        </div>
+
+        <div class="pet-card">
+            <img src="parakeet.png" alt="Bird" class="pet-image">
+            <h2>Bird</h2>
+            <h3>Breed: Parakeet</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <!-- Add more pets as needed -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+/* Styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ff14b1;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: rgb(248, 14, 85);
+}
+
+.pet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pet-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #e7117c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
